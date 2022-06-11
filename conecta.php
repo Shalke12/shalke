@@ -4,7 +4,7 @@
 // usuario
 // senha
 
-$uri = $_SERVER['REQUEST_URI'];
+
 $host = $_SERVER['HTTP_HOST'];
 
 $endereco = 'localhost';
@@ -13,7 +13,6 @@ $usuario = 'postgres';
 $senha = '123456';
 
 echo $host;
-
 
 if ($host == 'shalke12.herokuapp.com')	
 {
