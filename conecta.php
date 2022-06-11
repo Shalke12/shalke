@@ -15,7 +15,7 @@ $senha = '123456';
 echo $host;
 echo $uri;
 
-if ($host == 'https://shalke12.herokuapp.com/')	
+if ($host == 'shalke12.herokuapp.com/')	
 {
 $endereco = 'ec2-34-225-159-178.compute-1.amazonaws.com	';
 $banco = 'd30lvosqrpe06r';
