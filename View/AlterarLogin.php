@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 
 <?php
-include_once '../complementosWEB.html';
+include_once '../ComplementosWeb.html';
 require_once '../Dao/LoginDAO.php';
 require_once '../Dto/LoginDTO.php';
 

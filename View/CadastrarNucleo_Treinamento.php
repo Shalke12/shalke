@@ -7,7 +7,7 @@ and open the template in the editor.
 -->
 
 <?php
-include_once '../complementosWEB.html';
+include_once '../ComplementosWeb.html';
 ?>
 <html>
     <head>
