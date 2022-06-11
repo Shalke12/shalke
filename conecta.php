@@ -16,10 +16,10 @@ echo $host;
 
 if ($host == 'shalke12.herokuapp.com')	
 {
-$endereco = 'ec2-34-225-159-178.compute-1.amazonaws.com	';
-$banco = 'd30lvosqrpe06r';
-$usuario = 'nkjcxrpjrvebuw';
-$senha = 'f17c0002ec0c1c4e204e3b786fd4674badd8f3754fef9f5c52af97b50be0f308';
+	$endereco = 'ec2-34-225-159-178.compute-1.amazonaws.com	';
+	$banco = 'd30lvosqrpe06r';
+	$usuario = 'nkjcxrpjrvebuw';
+	$senha = 'f17c0002ec0c1c4e204e3b786fd4674badd8f3754fef9f5c52af97b50be0f308';
 }
 
 
