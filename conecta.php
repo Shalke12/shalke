@@ -13,7 +13,7 @@ $usuario = 'postgres';
 $senha = '123456';
 
 echo $host;
-echo $uri;
+
 
 if ($host == 'shalke12.herokuapp.com/')	
 {
