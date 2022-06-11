@@ -11,6 +11,177 @@ CREATE DATABASE "ShalkeXII"
     TABLESPACE = pg_default
     CONNECTION LIMIT = -1;
 
+-- SEQUENCE: public.aluno_idaluno_seq
+
+-- DROP SEQUENCE public.aluno_idaluno_seq;
+
+CREATE SEQUENCE public.aluno_idaluno_seq
+    INCREMENT 1
+    START 1
+    MINVALUE 1
+    MAXVALUE 9223372036854775807
+    CACHE 1;
+
+ALTER SEQUENCE public.aluno_idaluno_seq
+    OWNER TO nkjcxrpjrvebuw;
+	
+-- SEQUENCE: public.categoria_idcategoria_seq
+
+-- DROP SEQUENCE public.categoria_idcategoria_seq;
+
+CREATE SEQUENCE public.categoria_idcategoria_seq
+    INCREMENT 1
+    START 1
+    MINVALUE 1
+    MAXVALUE 9223372036854775807
+    CACHE 1;
+
+ALTER SEQUENCE public.categoria_idcategoria_seq
+    OWNER TO nkjcxrpjrvebuw;
+	
+	
+-- SEQUENCE: public.colaborador_idcolaborador_seq
+
+-- DROP SEQUENCE public.colaborador_idcolaborador_seq;
+
+CREATE SEQUENCE public.colaborador_idcolaborador_seq
+    INCREMENT 1
+    START 1
+    MINVALUE 1
+    MAXVALUE 9223372036854775807
+    CACHE 1;
+
+ALTER SEQUENCE public.colaborador_idcolaborador_seq
+    OWNER TO nkjcxrpjrvebuw;
+	
+	
+-- SEQUENCE: public.empresas_idempresas_seq
+
+-- DROP SEQUENCE public.empresas_idempresas_seq;
+
+CREATE SEQUENCE public.empresas_idempresas_seq
+    INCREMENT 1
+    START 1
+    MINVALUE 1
+    MAXVALUE 9223372036854775807
+    CACHE 1;
+
+ALTER SEQUENCE public.empresas_idempresas_seq
+    OWNER TO nkjcxrpjrvebuw;
+	
+-- SEQUENCE: public.familia_idfamilia_seq
+
+-- DROP SEQUENCE public.familia_idfamilia_seq;
+
+CREATE SEQUENCE public.familia_idfamilia_seq
+    INCREMENT 1
+    START 1
+    MINVALUE 1
+    MAXVALUE 9223372036854775807
+    CACHE 1;
+
+ALTER SEQUENCE public.familia_idfamilia_seq
+    OWNER TO nkjcxrpjrvebuw;
+	
+-- SEQUENCE: public.horario_idhorario_seq
+
+-- DROP SEQUENCE public.horario_idhorario_seq;
+
+CREATE SEQUENCE public.horario_idhorario_seq
+    INCREMENT 1
+    START 1
+    MINVALUE 1
+    MAXVALUE 9223372036854775807
+    CACHE 1;
+
+ALTER SEQUENCE public.horario_idhorario_seq
+    OWNER TO nkjcxrpjrvebuw;
+	
+-- SEQUENCE: public.login_idlogin_seq
+
+-- DROP SEQUENCE public.login_idlogin_seq;
+
+CREATE SEQUENCE public.login_idlogin_seq
+    INCREMENT 1
+    START 1
+    MINVALUE 1
+    MAXVALUE 9223372036854775807
+    CACHE 1;
+
+ALTER SEQUENCE public.login_idlogin_seq
+    OWNER TO nkjcxrpjrvebuw;
+	
+-- SEQUENCE: public.modalidade_idmodalidade_seq
+
+-- DROP SEQUENCE public.modalidade_idmodalidade_seq;
+
+CREATE SEQUENCE public.modalidade_idmodalidade_seq
+    INCREMENT 1
+    START 1
+    MINVALUE 1
+    MAXVALUE 9223372036854775807
+    CACHE 1;
+
+ALTER SEQUENCE public.modalidade_idmodalidade_seq
+    OWNER TO nkjcxrpjrvebuw;
+	
+-- SEQUENCE: public.nucleo_atendimento_idnucleo_atendimento_seq
+
+-- DROP SEQUENCE public.nucleo_atendimento_idnucleo_atendimento_seq;
+
+CREATE SEQUENCE public.nucleo_atendimento_idnucleo_atendimento_seq
+    INCREMENT 1
+    START 1
+    MINVALUE 1
+    MAXVALUE 9223372036854775807
+    CACHE 1;
+
+ALTER SEQUENCE public.nucleo_atendimento_idnucleo_atendimento_seq
+    OWNER TO nkjcxrpjrvebuw;
+	
+-- SEQUENCE: public.nucleo_treinamento_idnucleo_treinamento_seq
+
+-- DROP SEQUENCE public.nucleo_treinamento_idnucleo_treinamento_seq;
+
+CREATE SEQUENCE public.nucleo_treinamento_idnucleo_treinamento_seq
+    INCREMENT 1
+    START 1
+    MINVALUE 1
+    MAXVALUE 9223372036854775807
+    CACHE 1;
+
+ALTER SEQUENCE public.nucleo_treinamento_idnucleo_treinamento_seq
+    OWNER TO nkjcxrpjrvebuw;
+	
+-- SEQUENCE: public.perfil_idperfil_seq
+
+-- DROP SEQUENCE public.perfil_idperfil_seq;
+
+CREATE SEQUENCE public.perfil_idperfil_seq
+    INCREMENT 1
+    START 1
+    MINVALUE 1
+    MAXVALUE 9223372036854775807
+    CACHE 1;
+
+ALTER SEQUENCE public.perfil_idperfil_seq
+    OWNER TO nkjcxrpjrvebuw;
+	
+-- SEQUENCE: public.treino_semanal_idtreino_semanal_seq
+
+-- DROP SEQUENCE public.treino_semanal_idtreino_semanal_seq;
+
+CREATE SEQUENCE public.treino_semanal_idtreino_semanal_seq
+    INCREMENT 1
+    START 1
+    MINVALUE 1
+    MAXVALUE 9223372036854775807
+    CACHE 1;
+
+ALTER SEQUENCE public.treino_semanal_idtreino_semanal_seq
+    OWNER TO nkjcxrpjrvebuw;
+
+
 
 CREATE TABLE IF NOT EXISTS public.aluno
 (
@@ -304,5 +475,116 @@ ALTER TABLE IF EXISTS public.nucleo_treinamento
     ON DELETE CASCADE;
 CREATE INDEX IF NOT EXISTS fk_nucleo_treinamento_nucleo_atendimento1_idx
     ON public.nucleo_treinamento(nucleo_atendimento_idnucleo_atendimento);
+	
+INSERT INTO treino_semanal 
+(semana) VALUES (' Segunda-Feira - Quarta-Feira ');
+INSERT INTO treino_semanal 
+(semana) VALUES ('Segunda_feira - Sexta-Feira ');
+INSERT INTO treino_semanal 
+(semana) VALUES (' Terça-Feira - Quinta-feira ');
+INSERT INTO treino_semanal 
+(semana) VALUES ('Terça-feira – Sábado ');
+INSERT INTO treino_semanal 
+(semana) VALUES ('Quarta-feira – Sexta-feira');
+INSERT INTO treino_semanal 
+(semana) VALUES ('Quinta-feira – Sábado ');
+INSERT INTO treino_semanal 
+(semana) VALUES ('Segunda-feira – Quarta-feira – Sexta-feira ');
+INSERT INTO treino_semanal 
+(semana) VALUES ('Terça-feira – Quinta-feira – Sábado ');
+INSERT INTO treino_semanal 
+(semana) VALUES ('Sábado  ');  
+
+INSERT INTO categoria (idade)
+values ('Aluno de 6 e 7 anos');
+INSERT INTO categoria (idade)
+values ('Aluno de 8 e 9 anos');
+INSERT INTO categoria (idade)
+values ('Aluno de 10 e 11 anos');
+INSERT INTO categoria (idade)
+values ('Aluno de 12 e 13 anos');
+INSERT INTO categoria (idade)
+values ('Aluno de 14 e 15 anos');
+INSERT INTO categoria (idade)
+values ('Aluno de 16 e 17 anos');
+INSERT INTO categoria (idade)
+values ('Aluno de 18, 19 e 20 anos');
+INSERT INTO categoria (idade)
+values ('Adulto de 21 anos em diante');
+INSERT INTO categoria (idade)
+values ('Veterano a partir dos 35 anos em diante');
+
+INSERT INTO horario (hora)
+values ('07:00:00');
+INSERT INTO horario (hora)
+values ('08:00:00');
+INSERT INTO horario (hora)
+values ('09:00:0');
+INSERT INTO horario (hora)
+values ('10:00:00');
+INSERT INTO horario (hora)
+values ('11:00:00');
+INSERT INTO horario (hora)
+values ('14:00:00');
+INSERT INTO horario (hora)
+values ('15:00:00');
+INSERT INTO horario (hora)
+values ('16:00:00');
+INSERT INTO horario (hora)
+values ('17:00:00');
+INSERT INTO horario (hora)
+values ('18:00:00');
+INSERT INTO horario (hora)
+values ('19:00:00');
+INSERT INTO horario (hora)
+values ('20:00:00');
+INSERT INTO horario (hora)
+values ('21:00:00');
+INSERT INTO horario (hora)
+values ('22:00:00');
+
+INSERT INTO  modalidade
+(descricao )
+VALUES
+('Futebol');
+INSERT INTO  modalidade
+(descricao )
+VALUES
+('FutSal');
+INSERT INTO  modalidade
+(descricao )
+VALUES
+('Fut7');
+
+
+INSERT INTO perfil 
+(perfil) 
+VALUES
+('Administrador');
+INSERT INTO perfil 
+(perfil) 
+VALUES
+('Colaborador');
+INSERT INTO perfil 
+(perfil) 
+VALUES
+('Colaborador Individual');
+
+INSERT INTO login 
+(nome,login,email,senha,Perfil_idPerfil) 
+VALUES
+('Administrador','admin','administrar@gmail.com','21232f297a57a5a743894a0e4a801fc3',1);
+INSERT INTO login
+(nome,login,email,senha,Perfil_idPerfil) 
+VALUES
+('Farion Souza','farion','shalke.xii@gmail.com','e590123262820b1acbf86092a3d8cbf5',1);
+INSERT INTO login
+(nome,login,email,senha,Perfil_idPerfil) 
+VALUES
+('André Dias','andre','prof.andredias.etb@gmail.com','19eb8ef8ac25475acf7fdc8288f274a1',1);
+
+
+
+
 
 END;

@@ -39,7 +39,7 @@ class conexao {
         try {
             if (!isset(self::$instance)) {
                 //self::$instance = new PDO("mysql:host=localhost;dbname=ShalkeXII;charset=UTF8", "root", "");
-				self::$instance = new PDO("pgsql:host=endereco;port=5432;dbname=$banco;", $usuario, $senha);
+				self::$instance = new PDO("pgsql:host=$endereco;port=5432;dbname=$banco;", $usuario, $senha);
 			    self::$instance->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             }
             return self::$instance;
