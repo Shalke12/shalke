@@ -30,10 +30,10 @@ class conexao {
 
 		if ($host == 'shalke12.herokuapp.com')	
 		{
-			$endereco = 'ec2-34-225-159-178.compute-1.amazonaws.com	';
-			$banco = 'd30lvosqrpe06r';
-			$usuario = 'nkjcxrpjrvebuw';
-			$senha = 'f17c0002ec0c1c4e204e3b786fd4674badd8f3754fef9f5c52af97b50be0f308';
+			$endereco = 'ec2-34-231-221-151.compute-1.amazonaws.com';
+			$banco = 'd1esmgvap6do64';
+			$usuario = 'bmxmaoiqgbunqw';
+			$senha = '5d897b3b8171d1c06a4efeeff5efa37b4da32172ab4fa7a66759c5c505dd2079';
 		}
 		
         try {
